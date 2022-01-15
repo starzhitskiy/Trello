@@ -9,6 +9,7 @@
     <title>Trello</title>
   </head>
   <body>
+    <button class="mui-btn mui-btn--fab mui-btn--accent floating-btn" id="modal-btn">Vse</button>
     <div id="sidebar">
       <div class="mui--text-white mui--text-display1 mui--align-vertical">SAMPLE BLOG</div>
     </div>
@@ -23,13 +24,13 @@
 
           <form class="mui-form" id="form">
             <div class="mui-textfield mui-textfield--float-label">
-              <input type="text" id="question_input" required minlength="10" maxlength="256">
-              <label for="question_input">what need</label>
+              <input type="text" id="question-input" required minlength="10" maxlength="256">
+              <label for="question-input">what need</label>
             </div>
             <button
+              id="submit"
               type="submit"
               class="mui-btn mui-btn--raised"
-              disabled
             >
               задать вопрос
             </button>
