@@ -12,4 +12,12 @@ export class Question {
         console.log(response);
       })
   }
+
+  static fetch(token) {
+   return fetch(`https://trello-clone-test1-default-rtdb.firebaseio.com/questions.json?aut=${token}`)
+      .then(response => response.json())
+      .then(question => {
+        console.log('Questions', questions);
+      })
+  }
 }

@@ -1,5 +1,6 @@
 import { Question } from './question'
-import { createModal, isValid } from './utils'
+import { auttWithEmailAndPassword, createModal, isValid } from './utils'
+import { getAuthForm } from './auth'
 
 import './styles.css'
 
@@ -33,5 +34,18 @@ function submitFormHandler(event) {
 
 
 function openModal() {
-  createModal('avtolrization', '<h1>Test</h1>')
+  createModal('avtolrization', getAuthForm())
+  document
+  .getElementById('auth-form')
+  .addEventListener('submit', authFormHandler, {once: true})
+}
+
+function authFormHandler(event) {
+  event.preventDefault()
+
+  const email = event.target.querySelector('#email').value
+  const password = event.target.querySelector('#password').value
+
+  auttWithEmailAndPassword(email, password)
+    .then(Question.fetch)
 }
