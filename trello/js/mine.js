@@ -25,12 +25,17 @@ function addTask () {
     })
   })
 
-  cancelBtn.addEventListener('click', () => {
+  function clear() {
     textarea.value = ''
     value = ''
     form.style.display = 'none'
     btn.style.display = 'flex'
+  }
+
+  cancelBtn.addEventListener('click', () => {
+    clear()
   })
+  
 
   addBtn.addEventListener('click', () => {
     const newItem = document.createElement('div')
@@ -39,10 +44,7 @@ function addTask () {
     newItem.textContent = value
     lists[0].append(newItem)
 
-    textarea.value = ''
-    value = ''
-    form.style.display = 'none'
-    btn.style.display = 'flex'
+    clear()
   })
 }
 
