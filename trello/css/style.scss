@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 body {
@@ -31,6 +30,7 @@ body {
       padding: 10px;
       transition: .3s all ease;
       border-radius: 15px;
+      min-width: 200px;
 
       .title {
         padding: 5px;

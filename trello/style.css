@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  overflow: hidden; }
+  box-sizing: border-box; }
 
 body {
   background-color: aqua; }
@@ -26,7 +25,8 @@ body {
       margin: 0 15px;
       padding: 10px;
       transition: .3s all ease;
-      border-radius: 15px; }
+      border-radius: 15px;
+      min-width: 200px; }
       .app .boards__item .title {
         padding: 5px;
         color: #ffffff; }
