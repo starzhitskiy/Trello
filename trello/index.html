@@ -5,11 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Trello</title>
-    <script defer src="mine.js"></script>
+    <script defer src="./js/mine.js"></script>
   </head>
+
   <body>
-    <div>
-     
+
+    <div class="app">
+      <div class="boards">
+        <div class="boards__item">
+          <span contenteditable="true" class="title">Введите название</span>
+          <div class="list">
+            <div class="list__item" draggable="true">Стартовая карточка</div>
+          </div>
+
+          <div class="form">
+            <textarea class="textarea" placeholder="Название карточки"></textarea>
+
+            <div class="buttons">
+              <button class="add__item-btn">Добавить карточку</button>
+              <button class="cancel__item-btn">Отмена</button>
+            </div>
+          </div>
+
+          <div class="add__btn">
+            <span>+</span>
+            <p>Добавить карточку</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="button">Добавить доску</div>
     </div>
+    
   </body>
 </html>
