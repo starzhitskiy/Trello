@@ -8,12 +8,27 @@ body {
   background-color: aqua;
 }
 
+.button__log {
+    height: 35px;
+    background: #004dff;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    bottom: 50px;
+    color: #ffffff;
+    border-radius: 3px;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    margin: 10px;
+}
+
 .app {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
-  padding: 30px 20px;
+  padding: 50px 20px;
 
   .boards {
     display: flex;
@@ -150,4 +165,95 @@ body {
     border-radius: 3px;
     font-size: 14px;
   }
+}
+
+
+
+.forma {
+  width: 380px;
+  height: 280px;
+  position: relative;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  border-radius: 5%;
+  display: none;
+
+  &__btn {
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 40px;
+
+    .toggle__btn {
+      border: none;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #222b41;
+      border-radius: 50px;
+      color: #fff;
+      width: 150px;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .login {
+      background-color: #3c71f2;
+    }
+  }
+
+  &__input {
+    position: absolute;
+    top: 25%;
+    display: flex;
+    width: 500px;
+    left: 100px;
+    justify-content: space-between;
+    transition: all 0.3s ease 0s;
+
+
+    &--group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+
+      .input__field {
+        border: none;
+        padding: 10px;
+        background-color: #858585;
+        border-radius: 50px;
+        color: #fff;
+        width: 200px;
+
+        &::placeholder {
+          color: #fff;
+        }
+      }
+
+      .submit__btn {
+        border: none;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #222b41;
+        border-radius: 50px;
+        color: #fff;
+        width: 150px;
+      }
+    }
+  }
+
+  .button__close {
+    border: none;
+    background-color: #FF0000;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 85%;
+    left: 5%;
+  }
+
 }
