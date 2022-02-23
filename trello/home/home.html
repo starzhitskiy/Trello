@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <h2>
+      <a class="navbar__logo" href="./home.html">Trello</a>
+    </h2>
+    <ul class="navbar__ul">
+      <li class="navbar__ul--li">
+        <a id="userlink" class="navbar__link" href="">Usarname</a>
+      </li>
+      <li class="navbar__ul--li">
+        <a id="signoutlink" class="navbar-link" href="">Exit</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="contain">
+    <div class="boards">
+      <div class="boards__item">
+        <span contenteditable="true" class="title">Add name</span>
+        <div class="list">
+          <div contenteditable="true" class="list__item" draggable="true">First card</div>
+        </div>
+
+        <div class="form">
+          <textarea class="textarea" placeholder="Название карточки"></textarea>
+
+          <div class="buttons">
+            <button class="add__item-btn">Add Card</button>
+            <button class="cancel__item-btn">Сancel</button>
+          </div>
+        </div>
+
+        <div class="add__btn">
+          <span>+</span>
+          <p>Add Card</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="button">Add board</div>
+  </div>
+
+  <script src="./home.js"></script>
+  <script src="./board.js"></script>
+
+</body>
+</html>

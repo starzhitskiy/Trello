@@ -1,0 +1,39 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 250px;
+  margin: 15% auto;
+  gap: 10px;
+
+  &__input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  &__custom-control {
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(129, 129, 129);
+    border-radius: 10px;
+  }
+
+  &__btn {
+    width: 100%;
+    background-color: #004dff;
+    padding: 4px 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+
+    &:hover {
+      background-color: #c8a4e8;
+      border: 1px solid #FF0000;
+    }
+  }
+
+  &__link {
+    font-size: 10px;
+  }
+}
